@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 namespace GradeBook
 {
-       class Program
+          class Program
     {
         static void Main(string[] args)
         {
@@ -11,7 +11,6 @@ namespace GradeBook
          book.AddGrade(90.5);
          book.AddGrade(77.5);
          book.ShowStatistics();
-
         }
     }
 }
