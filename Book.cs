@@ -8,7 +8,6 @@ namespace GradeBook{
             grades= new List<double>();
             Name= name;
         }
-
         public void AddLetter(char letter){
         switch(letter){
             case 'A':
@@ -32,7 +31,6 @@ namespace GradeBook{
             else {
                 System.Console.WriteLine("Invalid Value!");
             }
-            
         }
         public Statistics GetStatistics()
         {
