@@ -29,7 +29,7 @@ namespace GradeBook{
                grades.Add(grade);
             }
             else {
-                System.Console.WriteLine("Invalid Value!");
+                throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
         public Statistics GetStatistics()
