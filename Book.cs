@@ -10,13 +10,13 @@ namespace GradeBook{
            {
                return name;
            }
-
            set {
                if (!String.IsNullOrEmpty(value)){
                    name=value;
                }
            }
         }
+        public const string CATEGORY="Science";
         public Book(string name){
             grades= new List<double>();
             Name= name;
