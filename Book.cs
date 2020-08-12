@@ -3,12 +3,25 @@ using System.Collections.Generic;
 namespace GradeBook{
     public class Book {
         private List<double> grades;
-        public string Name;
+        public string name;
+        public string Name
+        {
+           get
+           {
+               return name;
+           }
+
+           set {
+               if (!String.IsNullOrEmpty(value)){
+                   name=value;
+               }
+           }
+        }
         public Book(string name){
             grades= new List<double>();
             Name= name;
         }
-        public void AddLetter(char letter){
+        public void AddGrade(char letter){
         switch(letter){
             case 'A':
             AddGrade(90);
